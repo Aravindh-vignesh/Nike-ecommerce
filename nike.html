@@ -1,63 +1,122 @@
-<html>
-  <head>
-    <title>Nike. Just Do It. Nike IN</title>
-    <link rel="icon" href="./assets/image.png" />
-    <link rel="stylesheet" href="./style.css" />
-    <style>
-      h1{
-        width: 500px;
-        height: 700;
-      }
-  h4{
-    background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); padding: 20px; text-align: center; width: 1490;
-  }
-    
-    </style>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nike. Just Do It. Nike IN</title>
+  <link rel="icon" href="./assets/image.png" />
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+    }
 
-  <body>
-<div class="navbar" >
-<nav>
-   <!-- <h1 style="font-size: xxx-large; font-family:'Times New Roman', Times, serif ;">Nike</h1> -->
-   <div>
+    h1 {
+      max-width: 100%;
+    }
+
+    h4 {
+      background-color: #fff;
+      color: #000;
+      padding: 20px;
+      text-align: center;
+      margin: 0;
+    }
+
+    .navbar nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .search-bar {
+      width: 90%;
+      max-width: 400px;
+      height: 50px;
+      border-radius: 50px;
+      font-size: large;
+      padding: 0 20px;
+      margin: 20px auto;
+      display: block;
+      text-align: center;
+    }
+
+    video {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .big-heading {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 60px;
+      text-align: center;
+    }
+
+    .shop-button {
+      text-align: center;
+      border-radius: 50px;
+      font-size: large;
+      font-weight: 600;
+      text-decoration: none;
+      background: black;
+      color: white;
+      width: 200px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
     <nav>
-        <img src="./assets/nike-logo-on-transparent-background-free-vector.jpg" style="height: 50px; width: 90px; padding: 10px; vertical-align: middle;" alt="">
-        <ul >
-            <li><a href="./men.html" style="text-decoration: none; color: #000; padding: 0 10px;">Men</a></li>
-            <li><a href="./women.html" style="text-decoration: none; color: #000; padding: 0 10px;">Women</a></li>
-            <li><a href="./kids.html" style="text-decoration: none; color: #000; padding: 0 10px;">Kids</a></li>
-            <li><a href="socks.html" style="text-decoration: none; color: #000; padding: 0 10px;">Socks</a></li>
-        </ul>
+      <img src="./assets/nike-logo-on-transparent-background-free-vector.jpg" alt="Nike Logo" style="height: 50px; width: 90px;" />
+      <ul>
+        <li><a href="./men.html">Men</a></li>
+        <li><a href="./women.html">Women</a></li>
+        <li><a href="./kids.html">Kids</a></li>
+        <li><a href="./socks.html">Socks</a></li>
+      </ul>
     </nav>
-</div>
-<br>
+  </div>
 
-<center><input type="text" placeholder="Search Shoes" style="width: 300; height:60px ; text-align: center;
-justify-content: center; border-radius: 50px; font-size: xx-large; font-weight: 100px;"></center>
-
- <br>
- <center><h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 110px; ">
-  JUST DO IT </center>
-</h1>
- <!-- <center><img src="./assets/yt.jpg" ></center> -->
-
-
-<video autoplay loop muted src="./assets/Nike Air VaporMax - Evolution Stride - nikecorresp (720p, h264).mp4"  style="width: 1800;"></video>
-<br>
+  <input type="text" placeholder="Search Shoes" class="search-bar" />
 <center>
-<h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 110px; ">
-  ROOM TO SHINE
-</h1>
+  <h1 class="big-heading" >JUST DO IT</h1>
 </center>
-<br>
+  <video autoplay loop muted>
+    <source src="./assets/Nike Air VaporMax - Evolution Stride - nikecorresp (720p, h264).mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 <center>
-  <a href="./men.html" style="text-align: center;  border-radius: 50px; font-size: x-large; font-weight: 600; text-decoration: none; background: black; color: white; width: 200px; height: 60px; display: flex; align-items: center; justify-content: center;">
-    Shop Now
-  </a>
+  <h1 class="big-heading"  >ROOM TO SHINE</h1>
 </center>
+  <a href="./men.html" class="shop-button">Shop Now</a>
 
-  </body> <br>
-  <center><h4><b>&#169;2025 All Rights Reserved</b>
-</h4></center>
-
+  <h4><b>&#169; 2025 All Rights Reserved</b></h4>
+</body>
 </html>
